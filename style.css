@@ -1,6 +1,6 @@
-/* <link href="https://fonts.googleapis.com/css?family=Calibri" rel="stylesheet" type="text/css"> */
+<link href="https://fonts.googleapis.com/css?family=Calibri" rel="stylesheet" type="text/css">
 
-body {
+main {
     font-family: Calibri;
     font-size: 20px;
     background: linear-gradient(90deg, lightblue, bisque);
