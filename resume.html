@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grattan Rowland IV | Resumes</title>
+
+    <meta name="Grattan Rowland IV" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="base.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Spartan" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <header>
+        <a href="index.html">
+            <div class="white-text header-border">Grattan Rowland IV</div>
+        </a>
+    </header>
+
+    <div class="navbar">
+        <a href="index.html"><i class="fa fa-fw fa-black-tie"></i>About</a>
+        <a class="active" href="resume.html"><i class="fa fa-fw fa-briefcase"></i>Resume</a>
+        <a href="portfolio.html"><i class="fa fa-fw fa-archive"></i>Portfolio</a>
+        <a href="interests.html"><i class="fa fa-fw fa-bicycle"></i>Interests</a>
+        <a href="contact.html"><i class="fa fa-fw fa-envelope"></i>Contact</a>
+        <a class="redirect" href="https://github.com/gratrow96/my_repository"><i class="fa fa-fw fa-github"></i>github</a>
+        <a class="redirect" href="https://www.linkedin.com/in/grattan-rowland-iv/"><i class="fa fa-fw fa-linkedin"></i>LinkedIn</a>
+        <a class="redirect" href="https://www.youtube.com/channel/UCwzqjpGeOSCIyZ8GLeaSjAQ"><i class="fa fa-fw fa-youtube-play"></i>YouTube</a>
+    </div>
+
+    <div class="resumeSelectForm">
+         <!-- not sure how to display a pdf or what here -->
+        <label for="selectedResume">Select a resume..</label>
+        <select id="selectedResume" name="selectedResume">
+            <option value="software">Software</option>
+            <option value="machineLearning">Machine Learning</option>
+            <option value="automotive">Automotive</option>
+        </select>
+        <button class="resumeButton" type="button" formaction="#"><i class="fa fa-fw fa-download"></i>Download selected</button><!--idk what to do here but i want a download button to the right of the dropdown-->
+    </div>
+
+</body>
+</html>

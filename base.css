@@ -1,0 +1,205 @@
+/* Style for all documents*/
+body {
+    font-family: 'Spartan', sans-serif;
+    font-size: 20px;
+    /* background: linear-gradient(90deg, lightblue, bisque); */
+    background: powderblue;
+    animation: fadeIn ease .5s;  
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+header {
+    text-align: center;
+}
+
+.black-text {
+    color: black;
+}
+
+.slategrey-text {
+    color: slategrey;
+}
+
+.white-text {
+    color: white;
+}
+
+.white-box {
+    border-color: white;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 3px;
+    padding: 5px;
+    width: auto;
+    background: white;
+}
+
+.header-border {
+    border-color: white;
+    border-width: 8px;
+    border-style: solid;
+    border-radius: 5px;
+    padding: 5px;
+    width: 100%;
+    box-shadow: 5px 10px 10px #555;
+    /* background: lightsteelblue; */
+}
+
+header a {
+    padding: 16px;
+    font-size: 40px;
+    width: 40%;
+    float: left;
+    text-align: center;
+}
+
+header a:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: steelblue;
+    cursor: pointer;
+}
+
+/* Style the navigation bar */
+.navbar {
+    width: 100%;
+    background-color: #555;
+    overflow: auto;
+}
+
+/* Navbar links */
+.navbar a {
+    float: left;
+    text-align: center;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    transition-duration: .5s;
+}
+
+/* Navbar links on mouse-over */
+.navbar a:hover {
+    background-color: slategrey;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar .redirect {
+    float: right;
+    text-align: center;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    transition-duration: .5s;
+}
+
+/* Current/active navbar link */
+.active {
+    background-color: steelblue;
+}
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 500px) {
+    .navbar a {
+        float: none;
+        display: block;
+    }
+}
+
+.contact-info {
+    float: right;
+    color: white;
+    font-size: 17px;
+}
+
+/* Contact form styling: Style inputs with type="text", select elements and textareas */
+input[type=text], textarea {
+    width: 100%; /* 100% width */
+    padding: 12px; /* Some padding */
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #555;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: steelblue;
+}
+
+/* Add a background color and some padding around the form */
+.contactform {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+/* resume select dropdown */
+.resumeSelectForm {
+    width: 100%;
+}
+
+/*i dont think this is right or good practice, this controls the selection box on the resume page, maybe just "select" should be here?*/
+#selectedResume {
+    width: 65%;
+    padding: 12px; /* Some padding */
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Button stuff for resume page */
+.resumeButton {
+    color: white;
+    background-color: #555;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    transition-duration: .5s;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 20px;
+}
+
+.resumeButton:hover {
+    background-color: steelblue;
+    color: white;
+}
