@@ -1,7 +1,7 @@
 /* Style for all documents*/
 body {
     font-family: 'Spartan', sans-serif;
-    font-size: 20px;
+    font-size: 1.5em;
     /* background: linear-gradient(90deg, lightblue, bisque); */
     background: powderblue;
     animation: fadeIn ease .5s;  
@@ -36,22 +36,23 @@ header {
 
 .white-box {
     border-color: white;
-    border-width: 5px;
+    /* border-width: 5px; */
+    border-width: .25em;
     border-style: solid;
-    border-radius: 3px;
-    padding: 5px;
+    border-radius: .125em;
+    padding: .2em;
     width: auto;
     background: white;
 }
 
 .header-border {
     border-color: white;
-    border-width: 8px;
+    border-width: .25em;
     border-style: solid;
-    border-radius: 5px;
-    padding: 5px;
+    border-radius: .2em;
+    padding: .2em;
     width: 100%;
-    box-shadow: 5px 10px 10px #555;
+    box-shadow: .2em .25em .25em #555;
     /* background: lightsteelblue; */
 }
 
