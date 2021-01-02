@@ -57,8 +57,8 @@ header {
 }
 
 header a {
-    padding: 16px;
-    font-size: 40px;
+    padding: .5em;
+    font-size: 2em;
     width: 40%;
     float: left;
     text-align: center;
@@ -91,10 +91,10 @@ a:hover {
 .navbar a {
     float: left;
     text-align: center;
-    padding: 12px;
+    padding: .75em;
     color: white;
     text-decoration: none;
-    font-size: 17px;
+    font-size: .8em;
     transition-duration: .5s;
 }
 
@@ -108,10 +108,10 @@ a:hover {
 .navbar .redirect {
     float: right;
     text-align: center;
-    padding: 12px;
+    padding: .75em;
     color: white;
     text-decoration: none;
-    font-size: 17px;
+    font-size: .8em;
     transition-duration: .5s;
 }
 
@@ -131,18 +131,18 @@ a:hover {
 .contact-info {
     float: right;
     color: white;
-    font-size: 17px;
+    font-size: .8em;
 }
 
 /* Contact form styling: Style inputs with type="text", select elements and textareas */
 input[type=text], textarea {
     width: 100%; /* 100% width */
-    padding: 12px; /* Some padding */
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
+    padding: .8em; /* Some padding */
+    border: .1em solid #ccc; /* Gray border */
+    border-radius: .2em; /* Rounded borders */
     box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
+    margin-top: .6em; /* Add a top margin */
+    margin-bottom: 1em; /* Bottom margin */
     resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
@@ -150,9 +150,9 @@ input[type=text], textarea {
 input[type=submit] {
     background-color: #555;
     color: white;
-    padding: 12px 20px;
+    padding: .8em 1em;
     border: none;
-    border-radius: 4px;
+    border-radius: .2em;
     cursor: pointer;
 }
 
@@ -163,9 +163,9 @@ input[type=submit]:hover {
 
 /* Add a background color and some padding around the form */
 .contactform {
-    border-radius: 5px;
+    border-radius: .2em;
     background-color: #f2f2f2;
-    padding: 20px;
+    padding: 1em;
 }
 
 /* resume select dropdown */
@@ -176,12 +176,12 @@ input[type=submit]:hover {
 /*i dont think this is right or good practice, this controls the selection box on the resume page, maybe just "select" should be here?*/
 #selectedResume {
     width: 65%;
-    padding: 12px; /* Some padding */
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
+    padding: .9em; /* Some padding */
+    border: .1em solid #ccc; /* Gray border */
+    border-radius: .2em; /* Rounded borders */
     box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
+    margin-top: 2em; /* Add a top margin */
+    margin-bottom: .9em; /* Bottom margin */
     resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
@@ -192,12 +192,12 @@ input[type=submit]:hover {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: .9em;
     cursor: pointer;
     transition-duration: .5s;
     border: none;
-    border-radius: 4px;
-    padding: 12px 20px;
+    border-radius: .2em;
+    padding: .75em 1em;
 }
 
 .resumeButton:hover {
