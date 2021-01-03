@@ -51,7 +51,7 @@ header {
     border-style: solid;
     border-radius: .2em;
     padding: .2em;
-    width: 100%;
+    /* width: 100%; */
     box-shadow: .2em .25em .25em #555;
     /* background: lightsteelblue; */
 }
@@ -59,9 +59,10 @@ header {
 header a {
     padding: .5em;
     font-size: 2em;
-    width: 40%;
-    float: left;
+    width: 50%;
+    /* float: left; */
     text-align: center;
+    display: inline-block; /* displays in center of page */
 }
 
 header a:hover {
@@ -121,10 +122,25 @@ a:hover {
 }
 
 /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     .navbar a {
         float: none;
         display: block;
+    }
+
+    .navbar .redirect {
+        float: none;
+    }
+
+    header a {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    header a {
+        width: 70%;
+        font-size: 1em;
     }
 }
 
