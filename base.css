@@ -32,9 +32,12 @@ header {
     color: slategrey;
 }
 
-.white-text { /* may change this to a #555555 text class */
+.white-text {
+    color: white;
+}
+
+.charcoal-text {
     color: #555555;
-    /* color: white; */
 }
 
 .white-box {
