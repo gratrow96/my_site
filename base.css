@@ -2,7 +2,6 @@
 body {
     font-family: 'Spartan', sans-serif;
     font-size: 1.5em;
-    /* background: linear-gradient(90deg, lightblue, bisque); */
     background: powderblue;
     animation: fadeIn ease .5s;  
     animation-iteration-count: 1;
@@ -20,6 +19,9 @@ body {
 
 header {
     text-align: center;
+    font-weight: bolder;
+    font-family: Helvetica;
+    font-size: 1.2em;
 }
 
 .black-text {
@@ -30,13 +32,13 @@ header {
     color: slategrey;
 }
 
-.white-text {
-    color: white;
+.white-text { /* may change this to a #555555 text class */
+    color: #555555;
+    /* color: white; */
 }
 
 .white-box {
     border-color: white;
-    /* border-width: 5px; */
     border-width: .25em;
     border-style: solid;
     border-radius: .125em;
@@ -45,15 +47,27 @@ header {
     background: white;
 }
 
+.steelblue-box {
+    border-color: steelblue;
+    border-width: .25em;
+    border-style: solid;
+    border-radius: .125em;
+    padding: .2em;
+    width: auto;
+    background: steelblue;
+}
+
 .header-border {
-    border-color: white;
+    /* border-color: white; */
+    border-color: #555555;
     border-width: .25em;
     border-style: solid;
     border-radius: .2em;
     padding: .2em;
     /* width: 100%; */
-    box-shadow: .2em .25em .25em #555;
-    /* background: lightsteelblue; */
+    /* box-shadow: .2em .25em .25em #555555; */ /* for white border */
+    box-shadow: .2em .25em .25em slategray;
+    background: skyblue;
 }
 
 header a {
@@ -121,7 +135,7 @@ a:hover {
     background-color: steelblue;
 }
 
-/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 600 pixels */
 @media screen and (max-width: 600px) {
     .navbar a {
         float: none;
