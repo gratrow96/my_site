@@ -74,6 +74,12 @@ header {
     margin-top: 1em;
 }
 
+#narrow-box {
+    width: 50%;
+    margin: auto;
+    margin-top: 1em;
+}
+
 .header-border {
     /* border-color: white; */
     border-color: #555555;
@@ -190,6 +196,16 @@ a:hover {
     background-color: slategrey;
     color: white;
     text-decoration: none;
+}
+
+.redirect {
+    color: white;
+    transition-duration: .5s;
+}
+
+.redirect:hover {
+    color: black;
+    transition-duration: .5s;
 }
 
 .navbar .redirect {
