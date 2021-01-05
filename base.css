@@ -71,6 +71,7 @@ header {
 #long-box {
     height: 50em;
     width: auto;
+    margin-top: 1em;
 }
 
 .header-border {
@@ -154,7 +155,16 @@ a:hover {
 
 .aboutImage {
     width: 50%;
-    height: 50;
+    height: 50%;
+    float: left;
+    border-width: .3em;
+    border-color: white;
+    border-radius: 1em;
+    border-style: solid;
+}
+
+.aboutMe {
+    text-align: center;
 }
 
 /* Style the navigation bar */
