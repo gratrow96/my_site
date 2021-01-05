@@ -192,70 +192,6 @@ a:hover {
     background-color: steelblue;
 }
 
-/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 600 pixels */
-@media screen and (max-width: 600px) {
-    .navbar a {
-        float: none;
-        display: block;
-    }
-
-    .navbar .redirect {
-        float: none;
-    }
-
-    header a {
-        width: 80%;
-    }
-
-    .text-block {
-        display: block;
-        width: auto;
-        margin: auto;
-        margin-top: 1em;
-    }
-
-    #long-box {
-        height: 100em;
-    }
-}
-
-@media screen and (max-width: 1400px) {
-    .resumeSelectForm #selectedResume {
-        width: 60%;
-    }
-
-    .text-block {
-        display: block;
-        height: auto;
-        margin: auto;
-        margin-top: 1em;
-    }
-
-    #long-box {
-        height: 100em;
-    }
-
-}
-
-@media screen and (max-width: 400px) {
-    header a {
-        width: 70%;
-        font-size: 1em;
-    }
-
-    .text-block {
-        display: block;
-        width: auto;
-        margin: auto;
-        margin-top: 1em;
-    }
-
-    #long-box {
-        height: 100em;
-    }
-
-}
-
 .contact-info {
     float: right;
     color: white;
@@ -353,3 +289,226 @@ input[type=submit]:hover {
     background-color: navy;
     color: white;
 }
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than x pixels */
+@media screen and (max-width: 7680px) {
+    .text-block{
+        display: inline-block;
+        width: 6%;
+        border-width: .3em;
+        border-color: white;
+        border-radius: 1em;
+        border-style: solid;
+        box-sizing: border-box;
+        padding: 1em;
+        margin-top: .5em;
+        margin-left: .5em;
+        height: 20em;
+        background: lightskyblue;
+        box-shadow: .2em .25em .25em black;
+    }
+
+    .resumePageIcon {
+        width: 65%;
+        /* margin: auto; */
+    }
+}
+
+@media screen and (max-width: 3840px) {
+    .text-block{
+        display: inline-block;
+        width: 12%;
+        border-width: .3em;
+        border-color: white;
+        border-radius: 1em;
+        border-style: solid;
+        box-sizing: border-box;
+        padding: 1em;
+        margin-top: .5em;
+        margin-left: .5em;
+        height: 20em;
+        background: lightskyblue;
+        box-shadow: .2em .25em .25em black;
+    }
+
+    .resumePageIcon {
+        width: 50%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 2560px) {
+    .text-block {
+        display: inline-block;
+        width: 25%;
+        border-width: .3em;
+        border-color: white;
+        border-radius: 1em;
+        border-style: solid;
+        box-sizing: border-box;
+        padding: 1em;
+        margin-top: .5em;
+        margin-left: .5em;
+        height: 30em;
+        background: lightskyblue;
+        box-shadow: .2em .25em .25em black;
+    }
+
+    .resumePageIcon {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 1920px) {
+    .text-block {
+        display: inline-block;
+        width: 30%;
+        border-width: .3em;
+        border-color: white;
+        border-radius: 1em;
+        border-style: solid;
+        box-sizing: border-box;
+        padding: 1em;
+        margin-top: .5em;
+        margin-left: .5em;
+        height: 30em;
+        background: lightskyblue;
+        box-shadow: .2em .25em .25em black;
+    }
+
+    .resumePageIcon {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .text-block {
+        display: inline-block;
+        width: 26%;
+        border-width: .3em;
+        border-color: white;
+        border-radius: 1em;
+        border-style: solid;
+        box-sizing: border-box;
+        padding: 1em;
+        margin-top: .5em;
+        margin-left: .5em;
+        height: 30em;
+        background: lightskyblue;
+        box-shadow: .2em .25em .25em black;
+    }
+
+    .resumePageIcon {
+        width: 70%;
+        height: 40%;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .resumeSelectForm #selectedResume {
+        width: 60%;
+    }
+
+    .text-block {
+        display: block;
+        height: auto;
+        margin: auto;
+        margin-top: 1em;
+    }
+
+    #long-box {
+        height: 100em;
+    }
+
+}
+
+
+@media screen and (max-width: 1280px) {
+    .text-block {
+        display: block;
+        width: 30%;
+        margin: auto;
+        margin-top: 1em;
+    }
+
+    #long-box {
+        height: 100em;
+    }
+
+    .viewResumeButton {
+        width: 8em;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .text-block {
+        display: block;
+        width: 30%;
+        margin: auto;
+        margin-top: 1em;
+    }
+
+    #long-box {
+        height: 100em;
+    }
+
+    .viewResumeButton {
+        width: 5em;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .navbar a {
+        float: none;
+        display: block;
+    }
+
+    .navbar .redirect {
+        float: none;
+    }
+
+    header a {
+        width: 80%;
+    }
+
+    .text-block {
+        display: block;
+        width: auto;
+        margin: auto;
+        margin-top: 1em;
+    }
+
+    #long-box {
+        height: 100em;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    header a {
+        width: 70%;
+        font-size: 1em;
+    }
+
+    .text-block {
+        display: block;
+        width: auto;
+        margin: auto;
+        margin-top: 1em;
+    }
+
+    #long-box {
+        height: 100em;
+    }
+
+    .viewResumeButton {
+        width: 8em;
+    }
+
+}
+
+@media screen and (max-width: 300px) {
+    .viewResumeButton {
+        width: 6em;
+    }
+}
+
