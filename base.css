@@ -40,6 +40,10 @@ header {
     color: #555555;
 }
 
+.bold-text {
+    font-weight: bold;
+}
+
 .white-box {
     border-color: white;
     border-width: .25em;
@@ -93,9 +97,37 @@ a {
 }
 
 a:hover {
-    text-decoration: underline;
-    color: steelblue;
+    text-decoration: none;
+    color: white;
     cursor: pointer;
+}
+
+.link-in-steelblue {
+    color: white;
+    transition-duration: .5s;
+}
+
+.link-in-steelblue:hover {
+    color: black;
+    transition-duration: .5s;
+}
+
+.centered-text {
+    text-align: center;
+    width: 100%;
+    display: block;
+}
+
+.text-block{
+    display: inline-block;
+    width: 30%;
+    border-width: .1em;
+    border-color: white;
+    border-radius: .2em;
+    border-style: solid;
+    box-sizing: border-box;
+    padding: .2em;
+    margin-top: .5em;
 }
 
 /* Style the navigation bar */
@@ -154,6 +186,12 @@ a:hover {
     }
 }
 
+@media screen and (max-width: 1400px) {
+    .resumeSelectForm #selectedResume {
+        width: 60%;
+    }
+}
+
 @media screen and (max-width: 400px) {
     header a {
         width: 70%;
@@ -206,7 +244,6 @@ input[type=submit]:hover {
     width: 100%;
 }
 
-/*i dont think this is right or good practice, this controls the selection box on the resume page, maybe just "select" should be here?*/
 #selectedResume {
     width: 65%;
     padding: .9em; /* Some padding */
