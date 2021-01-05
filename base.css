@@ -44,6 +44,10 @@ header {
     font-weight: bold;
 }
 
+.bolder-text {
+    font-weight: bolder;
+}
+
 .white-box {
     border-color: white;
     border-width: .25em;
@@ -62,6 +66,11 @@ header {
     padding: .2em;
     width: auto;
     background: steelblue;
+}
+
+#long-box {
+    height: 50em;
+    width: auto;
 }
 
 .header-border {
@@ -120,14 +129,27 @@ a:hover {
 
 .text-block{
     display: inline-block;
-    width: 30%;
-    border-width: .1em;
+    width: 31%;
+    border-width: .3em;
     border-color: white;
-    border-radius: .2em;
+    border-radius: 1em;
     border-style: solid;
     box-sizing: border-box;
-    padding: .2em;
+    padding: 1em;
     margin-top: .5em;
+    margin-left: .5em;
+    height: 30em;
+    background: lightskyblue;
+    box-shadow: .2em .25em .25em black;
+}
+
+.resumePageIcon {
+    padding-top: 1em;
+    width: 100%;
+    margin: auto;
+    height: 50%;
+    width: 90%;
+    padding-bottom: 2em;
 }
 
 /* Style the navigation bar */
@@ -184,12 +206,35 @@ a:hover {
     header a {
         width: 80%;
     }
+
+    .text-block {
+        display: block;
+        width: auto;
+        margin: auto;
+        margin-top: 1em;
+    }
+
+    #long-box {
+        height: 100em;
+    }
 }
 
 @media screen and (max-width: 1400px) {
     .resumeSelectForm #selectedResume {
         width: 60%;
     }
+
+    .text-block {
+        display: block;
+        height: auto;
+        margin: auto;
+        margin-top: 1em;
+    }
+
+    #long-box {
+        height: 100em;
+    }
+
 }
 
 @media screen and (max-width: 400px) {
@@ -197,6 +242,18 @@ a:hover {
         width: 70%;
         font-size: 1em;
     }
+
+    .text-block {
+        display: block;
+        width: auto;
+        margin: auto;
+        margin-top: 1em;
+    }
+
+    #long-box {
+        height: 100em;
+    }
+
 }
 
 .contact-info {
@@ -272,5 +329,27 @@ input[type=submit]:hover {
 
 .resumeButton:hover {
     background-color: steelblue;
+    color: white;
+}
+
+.viewResumeButton {
+    color: white;
+    background-color: steelblue;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: .9em;
+    cursor: pointer;
+    transition-duration: .5s;
+    border: none;
+    border-radius: .2em;
+    padding: .75em 1em;
+    width: 10em;
+    margin: auto;
+    /* box-shadow: .2em .25em .25em black; */
+}
+
+.viewResumeButton:hover {
+    background-color: navy;
     color: white;
 }
