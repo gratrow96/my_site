@@ -152,6 +152,11 @@ a:hover {
     padding-bottom: 2em;
 }
 
+.aboutImage {
+    width: 50%;
+    height: 50;
+}
+
 /* Style the navigation bar */
 .navbar {
     width: 100%;
