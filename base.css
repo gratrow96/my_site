@@ -159,7 +159,7 @@ a:hover {
     padding-bottom: 2em;
 }
 
-.aboutImage {
+#aboutImage {
     width: 50%;
     height: 50%;
     float: left;
@@ -169,7 +169,7 @@ a:hover {
     border-style: solid;
 }
 
-.aboutMe {
+#aboutMe {
     text-align: center;
 }
 
@@ -471,6 +471,17 @@ input[type=submit]:hover {
     }
 }
 
+@media screen and (max-width: 1080px) {
+    .navbar a {
+        float: none;
+        display: block;
+    }
+
+    .navbar .redirect {
+        float: none;
+    }
+}
+
 @media screen and (max-width: 800px) {
     .text-block {
         display: block;
@@ -511,6 +522,19 @@ input[type=submit]:hover {
 
     #long-box {
         height: 100em;
+    }
+
+    #aboutMe {
+        width: 100%;
+        float: none;
+        display: block;
+    }
+
+    #aboutImage {
+        width: 90%;
+        float: none;
+        display: block;
+        margin: auto;
     }
 }
 
