@@ -386,7 +386,8 @@ input[type=submit]:hover {
     }
 
     header a {
-        width: 80%;
+        width: 70%;
+        font-size: 1em;
     }
 
     .text-block {
