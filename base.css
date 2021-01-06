@@ -1,4 +1,4 @@
-/* Style for all documents*/
+/* ////////////// Style for all documents //////////// */
 body {
     font-family: 'Spartan', sans-serif;
     font-size: 1.5em;
@@ -24,6 +24,7 @@ header {
     font-size: 1.2em;
 }
 
+/* /////////// TEXT CLASSES /////////// */
 .black-text {
     color: black;
 }
@@ -48,6 +49,13 @@ header {
     font-weight: bolder;
 }
 
+.centered-text {
+    text-align: center;
+    width: 100%;
+    display: block;
+}
+
+/* ////////// BORDER/BOX CLASSES ////////// */
 .white-box {
     border-color: white;
     border-width: .25em;
@@ -93,6 +101,7 @@ header {
     background: skyblue;
 }
 
+/* ////////// DIVISIONS/LINKS CLASSES ////////// */
 header a {
     padding: .5em;
     font-size: 2em;
@@ -128,12 +137,7 @@ a:hover {
     transition-duration: .5s;
 }
 
-.centered-text {
-    text-align: center;
-    width: 100%;
-    display: block;
-}
-
+/* ////////// IN-PAGE ELEMENT CLASSES ////////// */
 .text-block{
     display: inline-block;
     width: 31%;
@@ -173,7 +177,7 @@ a:hover {
     text-align: center;
 }
 
-/* Style the navigation bar */
+/* ////////// NAVIGATION BAR ////////// */
 .navbar {
     width: 100%;
     background-color: #555;
@@ -223,6 +227,7 @@ a:hover {
     background-color: steelblue;
 }
 
+/* ////////// CONTACT FORM CLASSES ////////// */
 .contact-info {
     float: right;
     color: white;
@@ -263,7 +268,7 @@ input[type=submit]:hover {
     padding: 1em;
 }
 
-/* resume select dropdown */
+/* ////////// RESUME SELECT DROPDOWN MENU CLASSES ////////// */
 .resumeSelectForm {
     width: 100%;
 }
@@ -321,7 +326,9 @@ input[type=submit]:hover {
     color: white;
 }
 
-/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than x pixels */
+
+/* ////////// RESPONSIVENESS FOR SCREEN DIMENSIONS ////////// */
+/* 8K Resolution */
 @media screen and (max-width: 7680px) {
     .text-block{
         display: inline-block;
@@ -341,10 +348,10 @@ input[type=submit]:hover {
 
     .resumePageIcon {
         width: 65%;
-        /* margin: auto; */
     }
 }
 
+/* 4K Resolution */
 @media screen and (max-width: 3840px) {
     .text-block{
         display: inline-block;
@@ -368,6 +375,7 @@ input[type=submit]:hover {
     }
 }
 
+/* 1440p Resolution */
 @media screen and (max-width: 2560px) {
     .text-block {
         display: inline-block;
@@ -390,6 +398,7 @@ input[type=submit]:hover {
     }
 }
 
+/* 1080p Resolution */
 @media screen and (max-width: 1920px) {
     .text-block {
         display: inline-block;
@@ -412,6 +421,7 @@ input[type=submit]:hover {
     }
 }
 
+/* Standard HDMI Output Resolution */
 @media screen and (max-width: 1600px) {
     .text-block {
         display: inline-block;
@@ -435,6 +445,7 @@ input[type=submit]:hover {
     }
 }
 
+/* Big Tablet and Small Laptop Resolution */
 @media screen and (max-width: 1440px) {
     .resumeSelectForm #selectedResume {
         width: 60%;
@@ -450,10 +461,9 @@ input[type=submit]:hover {
     #long-box {
         height: 100em;
     }
-
 }
 
-
+/* Small Tablet Resolution */
 @media screen and (max-width: 1280px) {
     .text-block {
         display: block;
@@ -471,6 +481,7 @@ input[type=submit]:hover {
     }
 }
 
+/* Min res before swapping to vertical menu */
 @media screen and (max-width: 1080px) {
     .navbar a {
         float: none;
@@ -482,6 +493,7 @@ input[type=submit]:hover {
     }
 }
 
+/* 480p Resolution */
 @media screen and (max-width: 800px) {
     .text-block {
         display: block;
@@ -499,16 +511,8 @@ input[type=submit]:hover {
     }
 }
 
+/* Common Big Phone Resolution */
 @media screen and (max-width: 600px) {
-    .navbar a {
-        float: none;
-        display: block;
-    }
-
-    .navbar .redirect {
-        float: none;
-    }
-
     header a {
         width: 80%;
     }
@@ -538,6 +542,7 @@ input[type=submit]:hover {
     }
 }
 
+/* Common Medium Phone Resolution */
 @media screen and (max-width: 400px) {
     header a {
         width: 70%;
@@ -561,6 +566,7 @@ input[type=submit]:hover {
 
 }
 
+/* Small Phone Resolution */
 @media screen and (max-width: 300px) {
     .viewResumeButton {
         width: 6em;
