@@ -328,78 +328,8 @@ input[type=submit]:hover {
 
 
 /* ////////// RESPONSIVENESS FOR SCREEN DIMENSIONS ////////// */
-/* 8K Resolution */
-@media screen and (max-width: 7680px) {
-    .text-block{
-        display: inline-block;
-        width: 6%;
-        border-width: .3em;
-        border-color: white;
-        border-radius: 1em;
-        border-style: solid;
-        box-sizing: border-box;
-        padding: 1em;
-        margin-top: .5em;
-        margin-left: .5em;
-        height: 20em;
-        background: lightskyblue;
-        box-shadow: .2em .25em .25em black;
-    }
-
-    .resumePageIcon {
-        width: 65%;
-    }
-}
-
-/* 4K Resolution */
-@media screen and (max-width: 3840px) {
-    .text-block{
-        display: inline-block;
-        width: 12%;
-        border-width: .3em;
-        border-color: white;
-        border-radius: 1em;
-        border-style: solid;
-        box-sizing: border-box;
-        padding: 1em;
-        margin-top: .5em;
-        margin-left: .5em;
-        height: 20em;
-        background: lightskyblue;
-        box-shadow: .2em .25em .25em black;
-    }
-
-    .resumePageIcon {
-        width: 50%;
-        margin: auto;
-    }
-}
-
-/* 1440p Resolution */
-@media screen and (max-width: 2560px) {
-    .text-block {
-        display: inline-block;
-        width: 25%;
-        border-width: .3em;
-        border-color: white;
-        border-radius: 1em;
-        border-style: solid;
-        box-sizing: border-box;
-        padding: 1em;
-        margin-top: .5em;
-        margin-left: .5em;
-        height: 30em;
-        background: lightskyblue;
-        box-shadow: .2em .25em .25em black;
-    }
-
-    .resumePageIcon {
-        width: 70%;
-    }
-}
-
-/* 1080p Resolution */
-@media screen and (max-width: 1920px) {
+/* Bigger than 1080p Resolution */
+@media screen and (min-width: 1920px) {
     .text-block {
         display: inline-block;
         width: 30%;
@@ -417,36 +347,12 @@ input[type=submit]:hover {
     }
 
     .resumePageIcon {
-        width: 70%;
+        width: 50%;
+        display: block;
     }
 }
 
-/* Standard HDMI Output Resolution */
 @media screen and (max-width: 1600px) {
-    .text-block {
-        display: inline-block;
-        width: 26%;
-        border-width: .3em;
-        border-color: white;
-        border-radius: 1em;
-        border-style: solid;
-        box-sizing: border-box;
-        padding: 1em;
-        margin-top: .5em;
-        margin-left: .5em;
-        height: 30em;
-        background: lightskyblue;
-        box-shadow: .2em .25em .25em black;
-    }
-
-    .resumePageIcon {
-        width: 70%;
-        height: 40%;
-    }
-}
-
-/* Big Tablet and Small Laptop Resolution */
-@media screen and (max-width: 1440px) {
     .resumeSelectForm #selectedResume {
         width: 60%;
     }
@@ -463,26 +369,11 @@ input[type=submit]:hover {
     }
 }
 
-/* Small Tablet Resolution */
-@media screen and (max-width: 1280px) {
-    .text-block {
-        display: block;
-        width: 30%;
-        margin: auto;
-        margin-top: 1em;
-    }
-
-    #long-box {
-        height: 100em;
-    }
-
-    .viewResumeButton {
-        width: 8em;
-    }
-}
-
-/* Min res before swapping to vertical menu */
 @media screen and (max-width: 1080px) {
+    .resumeSelectForm #selectedResume {
+        width: 60%;
+    }
+
     .navbar a {
         float: none;
         display: block;
@@ -491,28 +382,7 @@ input[type=submit]:hover {
     .navbar .redirect {
         float: none;
     }
-}
 
-/* 480p Resolution */
-@media screen and (max-width: 800px) {
-    .text-block {
-        display: block;
-        width: 30%;
-        margin: auto;
-        margin-top: 1em;
-    }
-
-    #long-box {
-        height: 100em;
-    }
-
-    .viewResumeButton {
-        width: 5em;
-    }
-}
-
-/* Common Big Phone Resolution */
-@media screen and (max-width: 600px) {
     header a {
         width: 80%;
     }
@@ -540,36 +410,13 @@ input[type=submit]:hover {
         display: block;
         margin: auto;
     }
-}
 
-/* Common Medium Phone Resolution */
-@media screen and (max-width: 400px) {
-    header a {
-        width: 70%;
-        font-size: 1em;
-    }
-
-    .text-block {
-        display: block;
-        width: auto;
-        margin: auto;
-        margin-top: 1em;
-    }
-
-    #long-box {
-        height: 100em;
-    }
-
-    .viewResumeButton {
-        width: 8em;
-    }
-
-}
-
-/* Small Phone Resolution */
-@media screen and (max-width: 300px) {
     .viewResumeButton {
         width: 6em;
+    }
+
+    .resumePageIcon {
+        display: block;
     }
 }
 
