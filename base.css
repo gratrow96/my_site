@@ -74,6 +74,8 @@ header {
     padding: .2em;
     width: auto;
     background: steelblue;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 #long-box {
@@ -229,6 +231,63 @@ a:hover {
 
 /* ////////// PORTFOLIO CLASSES ///////// */
 
+#portfolioContent {
+    width: 50%;
+    height: 50%;
+    float: left;
+    border-width: .3em;
+    border-color: white;
+    border-radius: 1em;
+    border-style: solid;
+}
+
+#portfolioText {
+    text-align: center;
+}
+
+.learnMoreButton {
+    color: navy;
+    background-color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: .9em;
+    cursor: pointer;
+    transition-duration: .5s;
+    border: none;
+    border-radius: .2em;
+    padding: .75em 1em;
+    width: 10em;
+    margin: auto;
+    align-items: center;
+}
+
+.learnMoreButton:hover {
+    background-color: navy;
+    color: white;
+}
+
+.projectRepoButton {
+    color: navy;
+    background-color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: .9em;
+    cursor: pointer;
+    transition-duration: .5s;
+    border: none;
+    border-radius: .2em;
+    padding: .75em 1em;
+    width: 10em;
+    margin: auto;
+    align-items: center;
+}
+
+.projectRepoButton:hover {
+    background-color: navy;
+    color: white;
+}
 
 /* ////////// CONTACT FORM CLASSES ////////// */
 .contact-info {
