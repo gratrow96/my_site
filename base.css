@@ -227,6 +227,9 @@ a:hover {
     background-color: steelblue;
 }
 
+/* ////////// PORTFOLIO CLASSES ///////// */
+
+
 /* ////////// CONTACT FORM CLASSES ////////// */
 .contact-info {
     float: right;
@@ -347,13 +350,14 @@ input[type=submit]:hover {
     }
 
     .resumePageIcon {
-        width: 50%;
+        width: 10em;
+        height: 10em;
         display: block;
     }
 }
 
 /* Weird resolution range that requires these special scales */
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1920px) {
     .resumeSelectForm #selectedResume {
         width: 60%;
     }
@@ -365,9 +369,16 @@ input[type=submit]:hover {
         margin-top: 1em;
     }
 
+    .resumePageIcon {
+        display: block;
+        width: 8em;
+        height: 8em;
+    }
+
     #long-box {
         height: 100em;
     }
+
 }
 
 /* Threshold for mallest size we allow for horizontal navbar */
