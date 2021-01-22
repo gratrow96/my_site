@@ -391,7 +391,6 @@ input[type=submit]:hover {
     color: white;
 }
 
-
 /* ////////// RESPONSIVENESS FOR SCREEN DIMENSIONS ////////// */
 /* Bigger than 1080p Resolution */
 @media screen and (min-width: 1920px) {
