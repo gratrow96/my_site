@@ -231,7 +231,9 @@ a:hover {
 
 /* ////////// PORTFOLIO CLASSES ///////// */
 
-#portfolioContent {
+#portfolioContent { /* add p to this? */
+    /* width: 30rem;
+    height: 30rem; */
     width: 50%;
     height: 50%;
     float: left;
@@ -239,6 +241,7 @@ a:hover {
     border-color: white;
     border-radius: 1em;
     border-style: solid;
+    /* object-fit: contain; */
 }
 
 #portfolioText {
