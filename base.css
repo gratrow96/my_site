@@ -231,7 +231,7 @@ a:hover {
 
 /* ////////// PORTFOLIO CLASSES ///////// */
 
-.portfolioContent { /* add p to this? */
+.portfolioContent {
     width: 100%;
     float: left;
     border-width: .3em;
@@ -289,10 +289,12 @@ a:hover {
     color: white;
 }
 
+/* //////// ROW DIVISIONS ///////// */
 .row {
     width: 95%;
     margin: 0 auto;
     display: flex;
+    margin-top: .5em;
   }
   
   .row-pic {
@@ -302,6 +304,7 @@ a:hover {
   
   .row-info {
     width: 66%;
+    margin: auto;
     /* border: 1px black solid; */
   }
   
@@ -316,6 +319,21 @@ a:hover {
     /* display: flex; */
     /* display: inline-block; */
   }
+
+/* ////////// INTERESTS CLASSES ///////// */
+.interestContent {
+    width: 100%;
+    float: left;
+    border-width: .3em;
+    border-color: white;
+    border-radius: 1em;
+    border-style: solid;
+    margin: auto;
+}
+
+.interestText {
+    text-align: center;
+}
 
 /* ////////// CONTACT FORM CLASSES ////////// */
 .contact-info {
