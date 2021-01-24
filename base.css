@@ -231,20 +231,17 @@ a:hover {
 
 /* ////////// PORTFOLIO CLASSES ///////// */
 
-#portfolioContent { /* add p to this? */
-    /* width: 30rem;
-    height: 30rem; */
-    width: 50%;
-    height: 50%;
+.portfolioContent { /* add p to this? */
+    /* width: 30rem; */
+    width: 33%;
     float: left;
     border-width: .3em;
     border-color: white;
     border-radius: 1em;
     border-style: solid;
-    /* object-fit: contain; */
 }
 
-#portfolioText {
+.portfolioText {
     text-align: center;
 }
 
@@ -261,7 +258,7 @@ a:hover {
     border-radius: .2em;
     padding: .75em 1em;
     width: 10em;
-    margin: auto;
+    margin-top: .5em;
     align-items: center;
 }
 
@@ -283,7 +280,7 @@ a:hover {
     border-radius: .2em;
     padding: .75em 1em;
     width: 10em;
-    margin: auto;
+    margin-top: .5em;
     align-items: center;
 }
 
