@@ -165,17 +165,17 @@ a:hover {
     padding-bottom: 2em;
 }
 
-#aboutImage {
-    width: 50%;
-    height: 50%;
+.indexContent {
+    width: 100%;
     float: left;
     border-width: .3em;
     border-color: white;
     border-radius: 1em;
     border-style: solid;
+    margin: auto;
 }
 
-#aboutMe {
+.indexText {
     text-align: center;
 }
 
@@ -297,28 +297,21 @@ a:hover {
     margin-top: .5em;
   }
   
-  .row-pic {
-    width: 33%;
-    /* border: 1px black solid; */
-  }
-  
-  .row-info {
+.row-info {
     width: 66%;
     margin: auto;
-    /* border: 1px black solid; */
-  }
+    margin-left: 1em;
+    /* margin-top: 1em; */
+}
   
-  .row-image {
+.row-image { /* not using currently */
     width: 100%;
     margin: 0 auto;
-  }
+}
   
-  .row-buttons {
-    /* border: 1px black solid; */
+.row-buttons {
     margin: 0 auto;
-    /* display: flex; */
-    /* display: inline-block; */
-  }
+}
 
 /* ////////// INTERESTS CLASSES ///////// */
 .interestContent {
@@ -516,13 +509,13 @@ input[type=submit]:hover {
         height: 100em;
     }
 
-    #aboutMe {
+    .indexText {
         width: 100%;
         float: none;
         display: block;
     }
 
-    #aboutImage {
+    .indexContent {
         width: 90%;
         float: none;
         display: block;
@@ -535,6 +528,28 @@ input[type=submit]:hover {
 
     .resumePageIcon {
         display: block;
+    }
+
+    .row {
+        display: block;
+        font-size: .6em;
+    }
+
+    .row-pic {
+        width: 90%;
+        margin: auto;
+    }
+
+    .portfolioContent {
+        display: block;
+        margin: auto;
+        float: none;
+        width: 90%;
+    }
+
+    .row-info {
+        margin: auto;
+        margin-top: 1em;
     }
 }
 
