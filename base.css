@@ -232,13 +232,13 @@ a:hover {
 /* ////////// PORTFOLIO CLASSES ///////// */
 
 .portfolioContent { /* add p to this? */
-    /* width: 30rem; */
-    width: 33%;
+    width: 100%;
     float: left;
     border-width: .3em;
     border-color: white;
     border-radius: 1em;
     border-style: solid;
+    margin: auto;
 }
 
 .portfolioText {
@@ -288,6 +288,34 @@ a:hover {
     background-color: navy;
     color: white;
 }
+
+.row {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+  }
+  
+  .row-pic {
+    width: 33%;
+    /* border: 1px black solid; */
+  }
+  
+  .row-info {
+    width: 66%;
+    /* border: 1px black solid; */
+  }
+  
+  .row-image {
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .row-buttons {
+    /* border: 1px black solid; */
+    margin: 0 auto;
+    /* display: flex; */
+    /* display: inline-block; */
+  }
 
 /* ////////// CONTACT FORM CLASSES ////////// */
 .contact-info {
