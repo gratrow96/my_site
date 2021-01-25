@@ -125,7 +125,7 @@ a {
 
 a:hover {
     text-decoration: none;
-    color: white;
+    /* color: white; */
     cursor: pointer;
 }
 
@@ -246,7 +246,7 @@ a:hover {
 }
 
 .learnMoreButton {
-    color: navy;
+    color: black;
     background-color: white;
     text-align: center;
     text-decoration: none;
@@ -263,8 +263,8 @@ a:hover {
 }
 
 .learnMoreButton:hover {
-    background-color: navy;
-    color: white;
+    background-color: skyblue;
+    color: white; /* doesn't apply because its inside a button object. will apply if only inside an only a object */
 }
 
 .projectRepoButton {
@@ -285,7 +285,7 @@ a:hover {
 }
 
 .projectRepoButton:hover {
-    background-color: navy;
+    background-color: skyblue;
     color: white;
 }
 
@@ -308,7 +308,11 @@ a:hover {
     width: 100%;
     margin: 0 auto;
 }
-  
+
+.row-pic {
+    width: 33%;
+}
+
 .row-buttons {
     margin: 0 auto;
 }
@@ -406,8 +410,8 @@ input[type=submit]:hover {
 }
 
 .viewResumeButton {
-    color: white;
-    background-color: steelblue;
+    color: black;
+    background-color: white;
     text-align: center;
     text-decoration: none;
     display: block;
@@ -419,11 +423,10 @@ input[type=submit]:hover {
     padding: .75em 1em;
     width: 10em;
     margin: auto;
-    /* box-shadow: .2em .25em .25em black; */
 }
 
 .viewResumeButton:hover {
-    background-color: navy;
+    background-color: steelblue;
     color: white;
 }
 
