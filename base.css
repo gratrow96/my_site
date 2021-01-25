@@ -56,15 +56,6 @@ header {
 }
 
 /* ////////// BORDER/BOX CLASSES ////////// */
-.white-box {
-    border-color: white;
-    border-width: .25em;
-    border-style: solid;
-    border-radius: .125em;
-    padding: .2em;
-    width: auto;
-    background: white;
-}
 
 .steelblue-box {
     border-color: steelblue;
@@ -76,12 +67,6 @@ header {
     background: steelblue;
     margin-top: 1em;
     margin-bottom: 1em;
-}
-
-#long-box {
-    height: 50em;
-    width: auto;
-    margin-top: 1em;
 }
 
 #narrow-box {
@@ -140,29 +125,11 @@ a:hover {
 }
 
 /* ////////// IN-PAGE ELEMENT CLASSES ////////// */
-.text-block{
-    display: inline-block;
-    width: 31%;
-    border-width: .3em;
-    border-color: white;
-    border-radius: 1em;
-    border-style: solid;
-    box-sizing: border-box;
-    padding: 1em;
-    margin-top: .5em;
-    margin-left: .5em;
-    height: 30em;
-    background: lightskyblue;
-    box-shadow: .2em .25em .25em black;
-}
 
-.resumePageIcon {
-    padding-top: 1em;
-    width: 100%;
+.resumeContent {
+    width: 33%;
+    /* float: left; */
     margin: auto;
-    height: 50%;
-    width: 90%;
-    padding-bottom: 2em;
 }
 
 .indexContent {
@@ -304,7 +271,7 @@ a:hover {
     /* margin-top: 1em; */
 }
   
-.row-image { /* not using currently */
+.row-image {
     width: 100%;
     margin: 0 auto;
 }
@@ -332,82 +299,50 @@ a:hover {
     text-align: center;
 }
 
-/* ////////// CONTACT FORM CLASSES ////////// */
-.contact-info {
-    float: right;
-    color: white;
-    font-size: .8em;
+/* ////////// COLUMN DIVISIONS ///////// */
+.column {
+    width: 95%;
+    margin: 0 auto;
+    display: block;
+    margin-top: .5em;
 }
 
-/* Contact form styling: Style inputs with type="text", select elements and textareas */
-input[type=text], textarea {
-    width: 100%; /* 100% width */
-    padding: .8em; /* Some padding */
-    border: .1em solid #ccc; /* Gray border */
-    border-radius: .2em; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: .6em; /* Add a top margin */
-    margin-bottom: 1em; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+.column-info {
+    width: 95%;
+    margin: auto;
+    margin-top: 1em;
 }
 
-/* Style the submit button with a specific background color etc */
-input[type=submit] {
-    background-color: #555;
-    color: white;
-    padding: .8em 1em;
-    border: none;
-    border-radius: .2em;
-    cursor: pointer;
-}
-
-/* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
-    background-color: steelblue;
-}
-
-/* Add a background color and some padding around the form */
-.contactform {
-    border-radius: .2em;
-    background-color: #f2f2f2;
-    padding: 1em;
-}
-
-/* ////////// RESUME SELECT DROPDOWN MENU CLASSES ////////// */
-.resumeSelectForm {
+.column-image {
     width: 100%;
+    margin: 0 auto;
 }
 
-#selectedResume {
-    width: 65%;
-    padding: .9em; /* Some padding */
-    border: .1em solid #ccc; /* Gray border */
-    border-radius: .2em; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 2em; /* Add a top margin */
-    margin-bottom: .9em; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+.column-pic {
+    width: 100%;
+    margin: auto;
 }
 
-/* Button stuff for resume page */
-.resumeButton {
-    color: white;
-    background-color: #555;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: .9em;
-    cursor: pointer;
-    transition-duration: .5s;
-    border: none;
-    border-radius: .2em;
-    padding: .75em 1em;
+.column-buttons {
+    margin: 0 auto;
+    margin-bottom: .5em;
+    margin-top: .5em;
 }
 
-.resumeButton:hover {
-    background-color: steelblue;
-    color: white;
+.column-block {
+    border-color: white;
+    border-width: .25em;
+    border-style: solid;
+    border-radius: .125em;
+    padding: .2em;
+    width: auto;
+    background: lightskyblue;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    box-shadow: .2em .25em .25em black;
 }
+
+/* ////////// RESUME PAGE CLASSES ////////// */
 
 .viewResumeButton {
     color: black;
@@ -433,50 +368,13 @@ input[type=submit]:hover {
 /* ////////// RESPONSIVENESS FOR SCREEN DIMENSIONS ////////// */
 /* Bigger than 1080p Resolution */
 @media screen and (min-width: 1920px) {
-    .text-block {
-        display: inline-block;
-        width: 30%;
-        border-width: .3em;
-        border-color: white;
-        border-radius: 1em;
-        border-style: solid;
-        box-sizing: border-box;
-        padding: 1em;
-        margin-top: .5em;
-        margin-left: .5em;
-        height: 30em;
-        background: lightskyblue;
-        box-shadow: .2em .25em .25em black;
-    }
-
-    .resumePageIcon {
-        width: 10em;
-        height: 10em;
-        display: block;
-    }
+    
 }
 
 /* Weird resolution range that requires these special scales */
 @media screen and (max-width: 1920px) {
     .resumeSelectForm #selectedResume {
         width: 60%;
-    }
-
-    .text-block {
-        display: block;
-        height: auto;
-        margin: auto;
-        margin-top: 1em;
-    }
-
-    .resumePageIcon {
-        display: block;
-        width: 8em;
-        height: 8em;
-    }
-
-    #long-box {
-        height: 100em;
     }
 
 }
@@ -501,17 +399,6 @@ input[type=submit]:hover {
         font-size: 1em;
     }
 
-    .text-block {
-        display: block;
-        width: auto;
-        margin: auto;
-        margin-top: 1em;
-    }
-
-    #long-box {
-        height: 100em;
-    }
-
     .indexText {
         width: 100%;
         float: none;
@@ -527,10 +414,6 @@ input[type=submit]:hover {
 
     .viewResumeButton {
         width: 6em;
-    }
-
-    .resumePageIcon {
-        display: block;
     }
 
     .row {
@@ -567,6 +450,10 @@ input[type=submit]:hover {
     .row-info {
         margin: auto;
         margin-top: 1em;
+    }
+
+    .column {
+        font-size: .6em;
     }
 }
 
