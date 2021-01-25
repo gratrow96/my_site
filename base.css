@@ -550,6 +550,20 @@ input[type=submit]:hover {
         width: 90%;
     }
 
+    .indexContent {
+        display: block;
+        margin: auto;
+        float: none;
+        width: 90%;
+    }
+
+    .interestContent {
+        display: block;
+        margin: auto;
+        float: none;
+        width: 90%;
+    }
+
     .row-info {
         margin: auto;
         margin-top: 1em;
