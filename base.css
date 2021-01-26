@@ -124,13 +124,7 @@ a:hover {
     transition-duration: .5s;
 }
 
-/* ////////// IN-PAGE ELEMENT CLASSES ////////// */
-
-.resumeContent {
-    width: 33%;
-    /* float: left; */
-    margin: auto;
-}
+/* ////////// INDEX CLASSES ////////// */
 
 .indexContent {
     width: 100%;
@@ -335,12 +329,44 @@ a:hover {
     border-style: solid;
     border-radius: .125em;
     padding: .2em;
-    width: auto;
+    width: auto; /* or 33% */
     background: lightskyblue;
     margin-top: 1em;
     margin-bottom: 1em;
     /* box-shadow: .2em .25em .25em black; */
 }
+
+/* ////////// RECORDINGS CLASSES ////////// */
+.recordingContent {
+    width: auto;
+    float: none;
+    border-width: .3em;
+    border-color: white;
+    border-radius: 1em;
+    border-style: solid;
+    margin: auto;
+}
+
+#mid-split-row-i {
+    width: 50%;
+}
+
+#mid-split-row-p {
+    width: 50%;
+}
+
+.videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+  }
+  .videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 
 /* ////////// RESUME PAGE CLASSES ////////// */
 
@@ -363,6 +389,12 @@ a:hover {
 .viewResumeButton:hover {
     background-color: steelblue;
     color: white;
+}
+
+.resumeContent {
+    width: 33%;
+    /* float: left; */
+    margin: auto;
 }
 
 /* ////////// RESPONSIVENESS FOR SCREEN DIMENSIONS ////////// */
