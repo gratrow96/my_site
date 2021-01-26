@@ -231,11 +231,11 @@ a:hover {
 
 .learnMoreButton:hover {
     background-color: skyblue;
-    color: white; /* doesn't apply because its inside a button object. will apply if only inside an only a object */
+    color: white;
 }
 
 .projectRepoButton {
-    color: navy;
+    color: black;
     background-color: white;
     text-align: center;
     text-decoration: none;
@@ -319,7 +319,7 @@ a:hover {
 }
 
 .column-pic {
-    width: 100%;
+    width: 66%;
     margin: auto;
 }
 
@@ -339,7 +339,7 @@ a:hover {
     background: lightskyblue;
     margin-top: 1em;
     margin-bottom: 1em;
-    box-shadow: .2em .25em .25em black;
+    /* box-shadow: .2em .25em .25em black; */
 }
 
 /* ////////// RESUME PAGE CLASSES ////////// */
